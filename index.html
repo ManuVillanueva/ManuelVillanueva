@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,16 +21,16 @@
           <h1>/LP/</h1>
           <nav id="nav" class="">
             <ul id="links">
-              <li href="#home" class="selected">Home</li>
-              <li href="#about-me">About Me</li>
-              <li href="#services">Services</li>
-              <li href="#portfolio">Portfolio</li>
-              <li href="#contact">Contact</li>
+              <li href="#home" class="selected" onclick="seleccionar(this)">Home</li>
+              <li href="#about-me" onclick="seleccionar(this)">About Me</li>
+              <li href="#services" onclick="seleccionar(this)">Services</li>
+              <li href="#portfolio" onclick="seleccionar(this)">Portfolio</li>
+              <li href="#contact" onclick="seleccionar(this)">Contact</li>
             </ul>
           </nav>
 
           <!-- Menú Icons (Responsive)-->
-          <div id="icon-nav">
+          <div id="icon-nav" onclick="responsiveMenu()">
             <i class="fa-solid fa-bars"></i>
           </div>
 
@@ -274,5 +274,40 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h3 class="title-section">Contact With Me</h3>
+    <div class="form-container">
+      <form action="">
+        <div class="half row">
+          <input type="text" placeholder="Full Name" class="half-input">
+          <input type="email" placeholder="Email" class="half-input">
+        </div>
+        <div class="row">
+          <input type="text" placeholder="" class="full-input">
+        </div>
+        <div class="div row">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+        </div>
+
+        <input type="submit" value="Send Message" class="btn-send">
+      </form>
+    </div-form-container>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>All rigth reserved - 2022</p>
+    <div class="networks">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script/script.js"></script>
 </body>
 </html>

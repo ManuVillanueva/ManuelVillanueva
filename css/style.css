@@ -72,6 +72,10 @@ html {
   color: #ff5080;
 }
 
+#home .container header .header-container .seccionado {
+  color: #ff5080;
+}
+
 #home .container .presentation {
   max-width: 1100px;
   height: 100vh;
@@ -359,4 +363,170 @@ html {
 #portfolio .row .project:hover .info {
   opacity: 1;
   bottom: 0;
+}
+
+/* Contact Styles */
+
+#contact {
+  padding: 100px 15px;
+}
+
+#contact .title-section {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+#contact .form-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#contact .form-container .row {
+  margin-bottom: 15px;
+}
+
+#contact .form-container .half {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .form-container input,
+#contact .form-container textarea {
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #8a8a8a;
+}
+
+#contact .form-container .half input {
+  width: 48%;
+}
+
+#contact .form-container .half-input {
+  width: 100%;
+}
+
+#contact .btn-send {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: .5s;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contact .btn-send:hover {
+  background-color: #ff5080;
+  color: #fff;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer a {
+  text-decoration: none;
+  text-decoration-color: #fff;
+  display: inline-block;
+  margin: 26px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+  .networks {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+  #icon-nav {
+    display: block;
+  }
+  #home .container .presentation h2 {
+    font-size:  40px;
+  }
+  #about-me {
+    padding: 50px 0;
+    display: block;
+  }
+  #about-me .photo-container {
+    max-width: 200px;
+    margin: auto;
+  }
+  #about-me .photo-container img {
+    padding: 8px;
+  }
+  #about-me .about-me .section-title {
+    text-align: center;
+  }
+  #about-me .about-me h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #services {
+    padding: 50px 15px;
+
+  }
+  #services .row {
+    display: block;
+  }
+  #services .row .service {
+    margin: 10px auto;
+  }
+  .skills-container {
+    padding: 50px 20px;
+  }
+
+  #portfolio {
+    padding: 50px 0;
+  }
+  #portfolio .row {
+    display: block;
+  }
+  #porfolio .row .project {
+    margin: 10px auto;
+  }
+
+  #contact {
+    padding: 50px 15px;
+  }
+  #contacto .form-container .half {
+    margin-bottom: 15px;
+    display: block;
+  }
+  #contac .form-container .half input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
 }

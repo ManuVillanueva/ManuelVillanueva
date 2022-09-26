@@ -101,7 +101,7 @@ html {
 }
 
 #home .container .presentation h2 span {
-  font-size: 25px;
+  font-size: 7vh;
   color: #ff5080;
 }
 
@@ -285,7 +285,7 @@ html {
 /* Skills Styles */
 
 .skills-container {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("img/background-skills.jpg");
+  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("/img/background-skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -389,6 +389,9 @@ html {
 
 #contact .form-container .row {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact .form-container .half {
@@ -402,19 +405,20 @@ html {
   border-radius: 20px;
   border: none;
   border: 1px solid #8a8a8a;
+  display: flex;
 }
 
 #contact .form-container .half input {
-  width: 48%;
+  margin: .5rem;
 }
 
 #contact .form-container .half-input {
-  width: 100%;
+  margin: .5rem;
 }
 
 #contact .btn-send {
-  display: block;
-  margin: auto;
+  display: inline-block;
+  margin-left: 13rem;
   cursor: pointer;
   transition: .5s;
   padding: 10px 15px;

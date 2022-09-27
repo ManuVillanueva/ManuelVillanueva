@@ -285,12 +285,18 @@ html {
 /* Skills Styles */
 
 .skills-container {
+  display: flex;
   background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("/img/background-skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 100px 0;
+  text-align: center;
+}
+
+.skills-container h3 {
+  display: flex;
   text-align: center;
 }
 
@@ -302,6 +308,10 @@ html {
 .skills-container .skill .info {
   display: flex;
   justify-content: space-between;
+}
+
+.info img {
+  width: 200px;
 }
 
 /* Porfolio Styles */
@@ -508,6 +518,7 @@ footer a {
     margin: 10px auto;
   }
   .skills-container {
+    display: block;
     padding: 50px 20px;
   }
 

@@ -416,9 +416,8 @@ html {
   margin: .5rem;
 }
 
-#contact .btn-send {
-  display: inline-block;
-  margin-left: 13rem;
+.btn-send {
+  margin-left: 43%;
   cursor: pointer;
   transition: .5s;
   padding: 10px 15px;
@@ -525,12 +524,22 @@ footer a {
     padding: 50px 15px;
   }
   #contacto .form-container .half {
+    width: 10rem;
+    padding: 50px 15px;
     margin-bottom: 15px;
-    display: block;
+    display: inline-block;
   }
   #contac .form-container .half input {
-    width: 100%;
+    width: 5rem;
     margin-bottom: 15px;
+    display: inline-block;
+  }
+  #contact textarea {
+    width: 20rem;
   }
 
+  #contact .btn-send {
+    position: relative;
+    right: 3rem;
+  }
 }

@@ -29,6 +29,7 @@ html {
 
 #home .container header .header-container {
   max-width: 1100px;
+  height: 6rem;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -39,6 +40,11 @@ html {
 #home .container header .header-container h1 {
   text-align: center;
   color: #ff5080;
+  width: 2rem;
+}
+
+#home .container header .header-container h1 img {
+  width: 15vh;
 }
 
 #home .container header .header-container nav ul {
@@ -293,13 +299,15 @@ html {
   background-position: center center;
   padding: 100px 0;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
 }
 
 .skills-container h3 {
-  display: flex;
   position: absolute;
-  margin-left: 50%;
-  font-size: 20px;
+  font-size: 25px;
+  text-decoration: underline;
 }
 
 .skills-container .skill {
@@ -311,6 +319,7 @@ html {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
 
 .info .list {
@@ -319,6 +328,20 @@ html {
   font-size: 18px;
   margin-left: 5rem;
   margin-top: 15rem;
+}
+
+.info .list:hover {
+  color: #ff5080;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.info .js {
+  margin: 15rem 0 0 3.5rem;
+}
+
+.info .git {
+  margin: 15rem 0 0 5.5rem;
 }
 
 .info img {
@@ -352,7 +375,7 @@ html {
 #portfolio .row .project {
   max-width: 450px;
   border: 1px solid;
-  margin: 0 10px;
+  margin: 10px 10px;
   position: relative;
   overflow: hidden;
 }
@@ -427,6 +450,7 @@ html {
   border: none;
   border: 1px solid #8a8a8a;
   display: flex;
+  resize: none;
 }
 
 #contact .form-container .half input {
@@ -481,7 +505,7 @@ footer a {
     background-color: rgba(0, 0, 0, .8);
     width: 100%;
     position: absolute;
-    top: 48px;
+    top: 5rem;
     left: 0;
     padding: 10px 0;
   }
@@ -490,10 +514,16 @@ footer a {
     text-align: center;
   }
   nav.responsive ul li {
-    margin: 5px 0;
+    margin: 2rem;
   }
   #icon-nav {
     display: block;
+  }
+  #home .container header .header-container {
+    height: 5rem;
+  }
+  #home .container header .header-container h1 img {
+    display: none;
   }
   #home .container .presentation h2 {
     font-size:  40px;
@@ -528,8 +558,21 @@ footer a {
     margin: 10px auto;
   }
   .skills-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 50px 20px;
+  }
+  .skills-container h3{
+    position: relative;
+  }
+  .info .list {
+    margin-top: 13rem;
+  }
+  .info .js {
+    margin-left: 3.2rem;
+  }
+  .info .git {
+    margin-left: 5.4rem;
   }
 
   #portfolio {

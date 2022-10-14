@@ -588,22 +588,14 @@ footer a {
   #contact {
     padding: 50px 15px;
   }
-  #contacto .form-container .half {
-    width: 10rem;
-    padding: 50px 15px;
-    margin-bottom: 15px;
-    display: inline-block;
+  .half {
+    display: flex;
+    flex-wrap: wrap;
   }
   #contac .form-container .half input {
     width: 5rem;
-    margin-bottom: 15px;
-    display: inline-block;
+    width: 100%;
   }
-
-  .half input {
-    width: 10rem;
-  }
-
   #contact textarea {
     width: 20rem;
   }
